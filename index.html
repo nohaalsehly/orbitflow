@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orbitflow - CRM & Automation</title>
+  <link rel="icon" href="images/logo.svg">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="text-slate-800">
+
+  <!-- Navbar -->
+  <header class="fixed top-0 left-0 w-full bg-white shadow-sm z-50">
+    <nav class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#home" class="flex items-center gap-2">
+        <img src="images/logo.svg" alt="logo" class="w-8 h-8">
+        <span class="text-xl font-bold">Orbitflow</span>
+        <span class="hidden sm:inline text-xs bg-teal-100 text-teal-700 px-2 py-1 rounded-full">CRM Studio</span>
+      </a>
+
+      <ul class="hidden md:flex gap-8 text-sm text-slate-600">
+        <li><a href="#home" class="hover:text-teal-600">Home</a></li>
+        <li><a href="#services" class="hover:text-teal-600">Services</a></li>
+        <li><a href="#work" class="hover:text-teal-600">Our Work</a></li>
+        <li><a href="#team" class="hover:text-teal-600">Our Team</a></li>
+        <li><a href="#contact" class="hover:text-teal-600">Contact Us</a></li>
+      </ul>
+
+      <a href="#contact" class="hidden md:block bg-teal-600 hover:bg-teal-700 text-white text-sm px-5 py-2 rounded-lg">Book a free audit</a>
+
+      <button id="menu-btn" class="md:hidden text-2xl">☰</button>
+    </nav>
+
+    <!-- mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t px-6 py-4">
+      <a href="#home" class="block py-2">Home</a>
+      <a href="#services" class="block py-2">Services</a>
+      <a href="#work" class="block py-2">Our Work</a>
+      <a href="#team" class="block py-2">Our Team</a>
+      <a href="#contact" class="block py-2">Contact Us</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="bg-slate-50 pt-32 pb-20">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+      <div>
+        <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+          Your CRM should <span class="text-teal-600">work for your team</span>
+        </h1>
+        <p class="mt-5 text-lg text-slate-600">
+          We set up your CRM, automate the busywork, and connect WhatsApp, phone, and email in one place.
+        </p>
+
+        <div class="mt-6 flex flex-wrap gap-5 text-sm">
+          <p>✅ Certified Zoho partner</p>
+          <p>✅ Live in 4 to 6 weeks</p>
+          <p>✅ Team training</p>
+        </div>
+
+        <div class="mt-8 flex gap-4">
+          <a href="#contact" class="bg-teal-600 hover:bg-teal-700 text-white px-6 py-3 rounded-lg font-semibold">Book a free audit</a>
+          <a href="#" class="border border-slate-300 hover:border-slate-500 px-6 py-3 rounded-lg font-semibold">▶ Watch demo</a>
+        </div>
+      </div>
+
+      <!-- hero card -->
+      <div class="relative">
+        <div class="relative overflow-hidden bg-slate-900 text-white rounded-2xl p-6 pb-16 shadow-xl">
+          <div class="float absolute -top-8 -right-8 w-32 h-32 bg-teal-500/30 rounded-full"></div>
+          <div class="float-slow absolute -bottom-10 left-10 w-24 h-24 bg-amber-500/30 rounded-full"></div>
+
+          <p class="relative font-semibold">Sales pipeline</p>
+
+          <div class="relative mt-5 grid grid-cols-3 gap-3 text-xs">
+            <div>
+              <p class="text-slate-400 mb-2">New lead</p>
+              <div class="bg-white/10 p-3 rounded-lg mb-2">Al-Noor Trading</div>
+              <div class="bg-white/10 p-3 rounded-lg">Riyadh Cool Co.</div>
+            </div>
+            <div>
+              <p class="text-slate-400 mb-2">Proposal</p>
+              <div class="bg-amber-500 text-slate-900 p-3 rounded-lg">Delta Clinics</div>
+            </div>
+            <div>
+              <p class="text-slate-400 mb-2">Won</p>
+              <div class="bg-teal-600 p-3 rounded-lg">Gulf Logistics</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="absolute -bottom-6 -left-4 bg-white shadow-lg rounded-xl px-4 py-3">
+          <p class="text-xs text-slate-500">Hours saved weekly</p>
+          <p class="text-lg font-bold">1,200+</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center">What we set up for you</h2>
+      <p class="text-center text-slate-600 mt-3">Everything your team needs to stop working by hand.</p>
+
+      <div class="mt-12 grid md:grid-cols-3 gap-6">
+
+        <div class="group border rounded-2xl p-6 hover:-translate-y-1 hover:shadow-lg hover:border-teal-400 transition">
+          <div class="w-12 h-12 bg-teal-100 group-hover:bg-teal-600 text-teal-600 group-hover:text-white rounded-xl flex items-center justify-center text-xl transition">☰</div>
+          <h3 class="text-xl font-semibold mt-4">CRM setup</h3>
+          <p class="text-slate-600 mt-2">Pipeline, fields, and permissions built around how your team sells.</p>
+          <ul class="mt-4 text-sm text-slate-600 space-y-1">
+            <li>✓ Custom modules</li>
+            <li>✓ Data migration from Excel</li>
+            <li>✓ User roles</li>
+          </ul>
+        </div>
+
+        <div class="group border rounded-2xl p-6 hover:-translate-y-1 hover:shadow-lg hover:border-amber-400 transition">
+          <div class="w-12 h-12 bg-amber-100 group-hover:bg-amber-500 text-amber-500 group-hover:text-white rounded-xl flex items-center justify-center text-xl transition">⚡</div>
+          <h3 class="text-xl font-semibold mt-4">Automation</h3>
+          <p class="text-slate-600 mt-2">Follow-ups, reminders, and approvals that run on their own.</p>
+          <ul class="mt-4 text-sm text-slate-600 space-y-1">
+            <li>✓ Auto-assign leads</li>
+            <li>✓ Deluge functions</li>
+            <li>✓ Scheduled reports</li>
+          </ul>
+        </div>
+
+        <div class="group border rounded-2xl p-6 hover:-translate-y-1 hover:shadow-lg hover:border-rose-400 transition">
+          <div class="w-12 h-12 bg-rose-100 group-hover:bg-rose-500 text-rose-500 group-hover:text-white rounded-xl flex items-center justify-center text-xl transition">🔗</div>
+          <h3 class="text-xl font-semibold mt-4">Integrations</h3>
+          <p class="text-slate-600 mt-2">Every message and call saved on the right customer record.</p>
+          <ul class="mt-4 text-sm text-slate-600 space-y-1">
+            <li>✓ WhatsApp Business API</li>
+            <li>✓ Phone system</li>
+            <li>✓ Email sync</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="relative overflow-hidden bg-slate-900 text-white py-16">
+    <div class="absolute -left-16 top-0 w-56 h-56 bg-teal-500/20 rounded-full"></div>
+    <div class="relative max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <div>
+        <p class="text-4xl font-bold">120+</p>
+        <p class="text-slate-400 mt-1">CRMs launched</p>
+      </div>
+      <div>
+        <p class="text-4xl font-bold">850+</p>
+        <p class="text-slate-400 mt-1">Automations</p>
+      </div>
+      <div>
+        <p class="text-4xl font-bold">98%</p>
+        <p class="text-slate-400 mt-1">Happy clients</p>
+      </div>
+      <div>
+        <p class="text-4xl font-bold">6</p>
+        <p class="text-slate-400 mt-1">Countries</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Work -->
+  <section id="work" class="bg-slate-50 py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold">Recent projects</h2>
+      <p class="text-slate-600 mt-3">Some problems we solved for our clients.</p>
+
+      <div class="mt-10 grid md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-2xl p-6 shadow-sm">
+          <p class="text-sm text-teal-600 font-semibold">Business services, KSA</p>
+          <h3 class="font-semibold text-lg mt-2">From 5 spreadsheets to one pipeline</h3>
+          <p class="text-slate-600 mt-2">Every client file now moves through clear stages.</p>
+          <p class="mt-4 pt-4 border-t"><span class="text-2xl font-bold">-40%</span> time per file</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-sm">
+          <p class="text-sm text-amber-600 font-semibold">HVAC services, Riyadh</p>
+          <h3 class="font-semibold text-lg mt-2">Visits booked through WhatsApp</h3>
+          <p class="text-slate-600 mt-2">Technicians get jobs on their phone and invoices go out automatically.</p>
+          <p class="mt-4 pt-4 border-t"><span class="text-2xl font-bold">3x</span> more visits</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-sm">
+          <p class="text-sm text-rose-600 font-semibold">Healthcare, Cairo</p>
+          <h3 class="font-semibold text-lg mt-2">No more missed calls</h3>
+          <p class="text-slate-600 mt-2">Every missed call creates a follow-up task for the front desk.</p>
+          <p class="mt-4 pt-4 border-t"><span class="text-2xl font-bold">0</span> missed calls</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section id="team" class="py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center">Our Team</h2>
+      <p class="text-center text-slate-600 mt-3">The people who build your system.</p>
+
+      <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <div class="group border rounded-2xl overflow-hidden">
+          <div class="relative h-44 bg-teal-100 flex items-center justify-center">
+            <span class="text-5xl font-bold text-teal-600">NA</span>
+            <div class="absolute inset-0 bg-teal-600 opacity-0 group-hover:opacity-100 transition flex items-center justify-center gap-3">
+              <a href="#" class="bg-white/20 hover:bg-white hover:text-teal-600 text-white w-9 h-9 rounded-full flex items-center justify-center text-sm">in</a>
+              <a href="#" class="bg-white/20 hover:bg-white hover:text-teal-600 text-white w-9 h-9 rounded-full flex items-center justify-center text-sm">X</a>
+            </div>
+          </div>
+          <div class="p-5 text-center">
+            <h3 class="font-semibold">Nadia Adel</h3>
+            <p class="text-sm text-teal-700">CRM Developer</p>
+          </div>
+        </div>
+
+        <div class="group border rounded-2xl overflow-hidden">
+          <div class="relative h-44 bg-amber-100 flex items-center justify-center">
+            <span class="text-5xl font-bold text-amber-500">KS</span>
+            <div class="absolute inset-0 bg-amber-500 opacity-0 group-hover:opacity-100 transition flex items-center justify-center gap-3">
+              <a href="#" class="bg-white/20 hover:bg-white hover:text-amber-500 text-white w-9 h-9 rounded-full flex items-center justify-center text-sm">in</a>
+              <a href="#" class="bg-white/20 hover:bg-white hover:text-amber-500 text-white w-9 h-9 rounded-full flex items-center justify-center text-sm">X</a>
+            </div>
+          </div>
+          <div class="p-5 text-center">
+            <h3 class="font-semibold">Karim Samir</h3>
+            <p class="text-sm text-amber-700">Automation Engineer</p>
+          </div>
+        </div>
+
+        <div class="group border rounded-2xl overflow-hidden">
+          <div class="relative h-44 bg-rose-100 flex items-center justify-center">
+            <span class="text-5xl font-bold text-rose-500">YH</span>
+            <div class="absolute inset-0 bg-rose-500 opacity-0 group-hover:opacity-100 transition flex items-center justify-center gap-3">
+              <a href="#" class="bg-white/20 hover:bg-white hover:text-rose-500 text-white w-9 h-9 rounded-full flex items-center justify-center text-sm">in</a>
+              <a href="#" class="bg-white/20 hover:bg-white hover:text-rose-500 text-white w-9 h-9 rounded-full flex items-center justify-center text-sm">X</a>
+            </div>
+          </div>
+          <div class="p-5 text-center">
+            <h3 class="font-semibold">Yasmin Hany</h3>
+            <p class="text-sm text-rose-700">Training Lead</p>
+          </div>
+        </div>
+
+        <div class="group border rounded-2xl overflow-hidden">
+          <div class="relative h-44 bg-slate-100 flex items-center justify-center">
+            <span class="text-5xl font-bold text-slate-800">OF</span>
+            <div class="absolute inset-0 bg-slate-800 opacity-0 group-hover:opacity-100 transition flex items-center justify-center gap-3">
+              <a href="#" class="bg-white/20 hover:bg-white hover:text-slate-800 text-white w-9 h-9 rounded-full flex items-center justify-center text-sm">in</a>
+              <a href="#" class="bg-white/20 hover:bg-white hover:text-slate-800 text-white w-9 h-9 rounded-full flex items-center justify-center text-sm">X</a>
+            </div>
+          </div>
+          <div class="p-5 text-center">
+            <h3 class="font-semibold">Omar Fathy</h3>
+            <p class="text-sm text-slate-600">Client Success</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-slate-900 text-white py-20">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10">
+
+      <form id="contact-form" class="bg-white/5 rounded-2xl p-6">
+        <h2 class="text-2xl font-bold">Contact Us</h2>
+
+        <input id="name" type="text" placeholder="Full name" class="w-full mt-5 bg-white/10 border border-white/10 rounded-lg px-4 py-3 placeholder-slate-400 focus:outline-none focus:border-teal-500">
+        <input id="email" type="email" placeholder="Email" class="w-full mt-4 bg-white/10 border border-white/10 rounded-lg px-4 py-3 placeholder-slate-400 focus:outline-none focus:border-teal-500">
+        <textarea id="message" rows="4" placeholder="Your message" class="w-full mt-4 bg-white/10 border border-white/10 rounded-lg px-4 py-3 placeholder-slate-400 focus:outline-none focus:border-teal-500"></textarea>
+
+        <p id="form-message"></p>
+
+        <button type="submit" class="w-full mt-5 bg-teal-600 hover:bg-teal-700 py-3 rounded-lg font-semibold">Send Message</button>
+      </form>
+
+      <div>
+        <h2 class="text-2xl font-bold">Contact Information</h2>
+        <div class="mt-6 space-y-4">
+          <p>📍 New Cairo, Egypt</p>
+          <p>📞 +20 123 456 7890</p>
+          <p>✉️ hello@orbitflow.io</p>
+        </div>
+
+        <iframe src="https://www.google.com/maps?q=New+Cairo,+Egypt&output=embed" class="w-full h-60 mt-6 rounded-2xl" loading="lazy"></iframe>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 border-t border-white/10 text-slate-400 py-6">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm">
+      <p>© <span id="year"></span> Orbitflow. All rights reserved.</p>
+      <div class="flex gap-4">
+        <a href="#" class="hover:text-white">Facebook</a>
+        <a href="#" class="hover:text-white">LinkedIn</a>
+        <a href="#" class="hover:text-white">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
